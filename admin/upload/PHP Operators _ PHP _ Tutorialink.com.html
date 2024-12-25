@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>PHP Operators | PHP | Tutorialink.com</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--fb-share-->
+  <!--<meta property="og:url"       content="http://www.tutorialink.com/" />-->
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="PHP Operators | PHP | Tutorialink.com" />
+  <meta property="og:description"   content="" />
+  <meta property="og:image"         content="http://www.tutorialink.com/img/fb-share-new.png" />
+  <!--/fb-share-->
+  <meta name="description" content="">
+  <meta name="keywords" content=", php, learn php, php tutorial, php example, php script, php scripting language, hyper text pre processor, server side scripting language , tutorialink, Tutorial, Example, learn, Programming Language">
+  <meta name="author" content="">
+  <link rel="shortcut icon" href="http://www.tutorialink.com/img/favicon.png" />
+
+  <!--Bootstrap core CSS-->
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/bootstrap.min.css" />
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/theme.css" />
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/bootstrap-reset.css" />
+
+  <!--FontAwesom CSS-->
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/font-awesome.min.css" />
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/flexslider.css" />
+  <link rel="stylesheet" href="http://www.tutorialink.com/assets/bxslider/jquery.bxslider.css" />
+  <!--Animate CSS-->
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/animate.css" />
+
+
+  <!--<link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css' />
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css' />-->
+
+  <!--Custom styles for this template-->
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/style.css" />
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/style-responsive.css" />
+
+  <!--HTML5 shim and Respond.js IE8 support of HTML5 tooltipss and media queries-->
+  <!--[if lt IE 9]>
+    <script src="http://www.tutorialink.com/jscript/html5shiv.js"></script>
+      <![endif]-->
+  <link rel="stylesheet" href="http://www.tutorialink.com/style/highlight.css">
+
+
+    <!--Alexa Meta Verify-->
+    <meta name="alexaVerifyID" content="Vy03PZBiQ7IeLQB9LzOFMfls4gw"/>
+    <!--Google Analytic-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-75181296-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+<link rel="stylesheet" href="http://www.tutorialink.com/style/bootstrap-social.css" />
+<link rel="stylesheet" href="http://www.tutorialink.com/style/slide-social-buttons.css" />
+<link rel="stylesheet" href="http://www.tutorialink.com/style/tutorial.css" />
+</head><body>
+<!--header start-->
+<!--Facebook Analytic-->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '859240377532606',
+      xfbml      : true,
+      version    : 'v2.6'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<header class="head-section">
+  <div class="navbar navbar-default navbar-static-top container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <a class="navbar-brand" href="http://www.tutorialink.com/"><img class="brand-logo" src="http://www.tutorialink.com/img/logo.svg" alt="Tutorialink"/></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown"><a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#">Tutorials <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.tutorialink.com/c/">C Language</a></li>
+            <li><a href="http://www.tutorialink.com/cpp/">CPP</a></li>
+            <li><a href="http://www.tutorialink.com/ds/">Data Structure</a></li>
+            <li><a href="http://www.tutorialink.com/java/">JAVA</a></li>
+            <li><a href="http://www.tutorialink.com/php/">PHP</a></li>
+            <li><a href="http://www.tutorialink.com/dbms/">DBMS</a></li>
+          </ul>
+        </li>
+        <li><a href="http://www.tutorialink.com/contact.html">Contact Us</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-close-others="false" data-delay="0" data-hover="dropdown" data-toggle="dropdown" href="#">Login / Sign up <i class="fa fa-angle-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.tutorialink.com/login.html">Login</a></li>
+            <li><a href="http://www.tutorialink.com/registration.html">Sign-up</a></li>
+          </ul>
+        </li>
+        <li>
+          <form method="GET" action="http://www.tutorialink.com/search.html">
+            <input class="form-control search" placeholder=" Search" name="q" type="text" />
+          </form>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<div id="info" class="alert alert-bottom alert- hidden alert-dismissable"><button id="x" type="button" class="close" data-dismiss="alert" aria-hidden="true"><i class="fa fa-times"></i></button></div><!--header end-->
+
+<!--breadcrumbs start-->
+<div class="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-sm-4">
+        <h1>
+          PHP        </h1>
+      </div>
+      <div class="col-lg-8 col-sm-8">
+        <ol class="breadcrumb pull-right">
+          <li><a href="http://www.tutorialink.com/index.html">Home</a></li>
+<li><a href="http://www.tutorialink.com/php/index.html">PHP</a></li><li class="active">PHP Operators</li>        </ol>
+      </div>
+    </div>
+  </div>
+</div>
+<!--breadcrumbs end-->
+
+<!--container start-->
+    <!--container start-->
+    <div class="container">
+        <div class="row">
+        <!--tutorial start-->
+        <div class="col-lg-9">
+        <div class="tutorial-item">
+            <div class="row">
+                <div class="col-lg-2 col-sm-2">
+                    <div class="date-wrap">
+                        <span class="date">PHP</span>
+                        <span class="month">PHP Operators</span>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-sm-10">
+                <h1>PHP Operators</h1>
+
+<p>PHP Supports following Operators:</p>
+
+<ul>
+	<li><a class="scroll" href="#arithmetic">Arithmetic</a></li>
+	<li><a class="scroll" href="#logical">Logical</a></li>
+	<li><a class="scroll" href="#bitwise">Bitwise</a></li>
+	<li><a class="scroll" href="#assignment">Assignment</a></li>
+	<li><a class="scroll" href="#string">String</a></li>
+	<li><a class="scroll" href="#increment-decrement">Increment / Decrement</a></li>
+	<li><a class="scroll" href="#comparison-operator">Comparison</a></li>
+</ul>
+
+<p>Each Operators are Explained below:</p>
+
+<h2><a id="arithmetic" name="arithmetic">PHP Arithmetic Operators</a></h2>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>+</td>
+			<td>Addition</td>
+			<td>$x + $y</td>
+			<td>Sum of $x and $y</td>
+		</tr>
+		<tr>
+			<td>-</td>
+			<td>Subtraction</td>
+			<td>$x - $y</td>
+			<td>Difference of $x and $y</td>
+		</tr>
+		<tr>
+			<td>*</td>
+			<td>Multiplication</td>
+			<td>$x * $y</td>
+			<td>Product of $x and $y</td>
+		</tr>
+		<tr>
+			<td>/</td>
+			<td>Division</td>
+			<td>$x / $y</td>
+			<td>Quotient of $x and $y</td>
+		</tr>
+		<tr>
+			<td>%</td>
+			<td>Modulus</td>
+			<td>$x % $y</td>
+			<td>Remainder of $x divided by $y</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Example:</h3>
+
+<p>The following example&nbsp;shows the different results of using the different arithmetic operators:</p>
+
+<pre>
+<code>&lt;?php
+&nbsp; &nbsp; $n1 = 10;
+&nbsp; &nbsp; $n2 = 5;
+
+&nbsp; &nbsp; $add = $n1 + $n2;
+&nbsp; &nbsp; echo &quot;$n1 + $n2 = $add Addition&lt;br /&gt;&quot;;
+
+&nbsp; &nbsp; $sub = $n1 - $n2;
+&nbsp; &nbsp; echo &quot;$n1 - $n2 = $sub Subtraction&lt;br /&gt;&quot;;
+
+&nbsp; &nbsp; $mul = $n1 * $n2;
+&nbsp; &nbsp; echo &quot;$n1 * $n2 = $mul Multiplication&lt;br /&gt;&quot;;
+
+&nbsp; &nbsp; $div = $n1 / $n2;
+&nbsp; &nbsp; echo &quot;$n1 / $n2 = $div Division&lt;br /&gt;&quot;;
+
+&nbsp; &nbsp; $mod = $n1 % $n2;
+&nbsp; &nbsp; echo &quot;$n1 % $n2 = $mod Remainder of Division&quot;;
+?&gt;</code></pre>
+
+<h3>Output:</h3>
+
+<div class="window-output">
+<div class="title-bar">
+<div class="title">Tutorialik.com</div>
+</div>
+
+<div class="body">10 + 5 = 15 Addition<br />
+10 - 5 = 5 Subtraction<br />
+10 * 5 = 50 Multiplication<br />
+10 / 5 = 2 Division<br />
+10 % 5 = 0 Remainder of Division</div>
+</div>
+
+<hr />
+<h2><a id="logical" name="logical">PHP Logical Operators</a></h2>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>and</td>
+			<td>And</td>
+			<td>$x and $y</td>
+			<td>True if both $x and $y are true</td>
+		</tr>
+		<tr>
+			<td>or</td>
+			<td>Or</td>
+			<td>$x or $y</td>
+			<td>True if either $x or $y is true</td>
+		</tr>
+		<tr>
+			<td>xor</td>
+			<td>Xor</td>
+			<td>$x xor $y</td>
+			<td>True if either $x or $y is true, but not both</td>
+		</tr>
+		<tr>
+			<td>&amp;&amp;</td>
+			<td>And</td>
+			<td>$x &amp;&amp; $y</td>
+			<td>True if both $x and $y are true</td>
+		</tr>
+		<tr>
+			<td>||</td>
+			<td>Or</td>
+			<td>$x || $y</td>
+			<td>True if either $x or $y is true</td>
+		</tr>
+		<tr>
+			<td>!</td>
+			<td>Not</td>
+			<td>!$x</td>
+			<td>True if $x is not true</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<h2><a id="bitwise" name="bitwise">PHP Bitwise Operators</a></h2>
+
+<p>The bitwise operators enable you to treat an integer as the series of bits used to represent&nbsp;it.<br />
+You probably will not find a lot of use for the bitwise operators in PHP, but a&nbsp;summary is shown in following Table</p>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>&amp;</td>
+			<td>Bitwise AND</td>
+			<td>$a &amp; $b</td>
+			<td>Bits set in $a and $b are set in result.</td>
+		</tr>
+		<tr>
+			<td>|</td>
+			<td>Bitwise OP</td>
+			<td>$a | $b</td>
+			<td>Bits set in $a or $a are set in the result.</td>
+		</tr>
+		<tr>
+			<td>~</td>
+			<td>Bitwise NOT</td>
+			<td>~$a</td>
+			<td>Bits set in $a are not set in the result and vice versa.</td>
+		</tr>
+		<tr>
+			<td>^</td>
+			<td>Bitwise Ex-OR (XOR)</td>
+			<td>$a ^ $b</td>
+			<td>Bits set in $a or $b but not in both are set in the result.</td>
+		</tr>
+		<tr>
+			<td>&lt;&lt;</td>
+			<td>Left Shift</td>
+			<td>$a &lt;&lt; $b</td>
+			<td>Shifts $a left $b bits.</td>
+		</tr>
+		<tr>
+			<td>&gt;&gt;</td>
+			<td>Right Shift</td>
+			<td>$a &gt;&gt; $b</td>
+			<td>Sifts $a right $b bits.</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr />
+<h2><a id="assignment" name="assignment">PHP Assignment Operators</a></h2>
+
+<p>The PHP assignment operators is used to write a value to a variable.</p>
+
+<p>The basic assignment operator in PHP is &quot;=&quot;. It means that the left operand gets set to the value of the assignment expression on the right.</p>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<td><strong>Assignment</strong></td>
+			<td><strong>Short Hand</strong></td>
+			<td><strong>Description</strong></td>
+		</tr>
+		<tr>
+			<td>$x = $y</td>
+			<td>$x = $y</td>
+			<td>The left operand gets set to the value of the expression on the right</td>
+		</tr>
+		<tr>
+			<td>$x = $x + $y</td>
+			<td>$x += $y</td>
+			<td>Addition</td>
+		</tr>
+		<tr>
+			<td>$x = $x - $y</td>
+			<td>$x -= $y</td>
+			<td>Subtraction</td>
+		</tr>
+		<tr>
+			<td>$x = $x * $y</td>
+			<td>$x *= $y</td>
+			<td>Multiplication</td>
+		</tr>
+		<tr>
+			<td>$x = $x / $y</td>
+			<td>$x /= $y</td>
+			<td>Division</td>
+		</tr>
+		<tr>
+			<td>$x = $x % $y</td>
+			<td>$x %= $y</td>
+			<td>Modulus</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Example:</h3>
+
+<p>The following example shows&nbsp;&nbsp;the different results of using the different assignment operators:</p>
+
+<pre>
+<code>&lt;?php&nbsp;
+&nbsp; &nbsp; $x = 10;
+&nbsp; &nbsp; $y = 5;
+
+&nbsp; &nbsp; echo $x.&#39; Initial Value $x&lt;br /&gt;&#39;;
+&nbsp; &nbsp; echo $y.&#39; Initial Value $y&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Assign Value of $y to $x*/
+&nbsp; &nbsp; $x = $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After Assigning $y&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Add Value of $y to Existing Value of $x, and New Value is Assign to $x*/
+&nbsp; &nbsp; $x += $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After $x += $y;&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Subtract Value of $y from Existing Value of $x, and New Value is Assign to $x*/
+&nbsp; &nbsp; $x -= $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After $x -= $y;&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Multiply Value of $y by Existing Value of $x, and New Value is Assign to $x*/
+&nbsp; &nbsp; $x *= $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After $x *= $y;&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Divide Value of $y from Existing Value of $x, and New Value is Assign to $x*/
+&nbsp; &nbsp; $x /= $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After $x /= $y;&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; /*Divide Value of $y from Existing Value of $x, and Reminder is Assign to $x*/
+&nbsp; &nbsp; $x %= $y;
+&nbsp; &nbsp; echo &#39;Value of $x is &#39;.$x.&#39; After $x %= $y;&lt;br /&gt;&#39;;
+?&gt;</code></pre>
+
+<h3>Output:</h3>
+
+<div class="window-output">
+<div class="title-bar">
+<div class="title">Tutorialik.com</div>
+</div>
+
+<div class="body">10 Initial Value $x<br />
+5 Initial Value $y<br />
+Value of $x is 5 After Assigning $y<br />
+Value of $x is 10 After $x += $y;<br />
+Value of $x is 5 After $x -= $y;<br />
+Value of $x is 25 After $x *= $y;<br />
+Value of $x is 5 After $x /= $y;<br />
+Value of $x is 0 After $x %= $y;</div>
+</div>
+
+<hr />
+<h2><a id="string" name="string">PHP String Operators</a></h2>
+
+<p>There are two types of &#39;String Operators&#39;:&nbsp;<span style="line-height: 1.6;">The Concatenating&nbsp;</span><span style="line-height: 1.6;">Operator (<code>.</code>) and the Concatenating Assignment Operator (<code>.=</code>).</span></p>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Example</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td><code>.</code></td>
+			<td>Concatenation</td>
+			<td>$txt1 = &quot;Hello&quot;<br />
+			$txt2 = $txt1 <code>.</code> &quot; PHP&quot;</td>
+			<td>Now $txt2 contains &quot;Hello PHP&quot;</td>
+		</tr>
+		<tr>
+			<td><code>.=</code></td>
+			<td>Concatenation assignment</td>
+			<td>$txt1 = &quot;Hello&quot;<br />
+			$txt1 <code>.=</code> &quot; PHP&quot;</td>
+			<td>Now $txt1 contains &quot;Hello PHP&quot;</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Example:</h3>
+
+<p>The following example shows the results of using the string operators:</p>
+
+<pre>
+<code>&lt;?php
+&nbsp; &nbsp; $str1 = &quot;Hello&quot;;
+&nbsp; &nbsp; $str2 = $str1 . &quot; PHP&quot;; //Concatenation using .
+&nbsp; &nbsp; echo $str2;
+&nbsp; &nbsp; echo &quot;&lt;br /&gt;&quot;;
+&nbsp; &nbsp; $str3 = &quot;Hello&quot;;
+&nbsp; &nbsp; $str3 .= &quot; PHP&quot;; &nbsp; &nbsp; &nbsp; &nbsp;//Concatenation using .=
+&nbsp; &nbsp; echo $str3;
+?&gt;</code></pre>
+
+<h3>Output:</h3>
+
+<div class="window-output">
+<div class="title-bar">
+<div class="title">Tutorialik.com</div>
+</div>
+
+<div class="body">Hello PHP<br />
+Hello PHP</div>
+</div>
+
+<hr />
+<h2><a id="increment-decrement" name="increment-decrement">PHP Increment / Decrement Operators</a></h2>
+
+<table class="table table-responsive table-bordered table-hover" id="table1">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>++$x</td>
+			<td>Pre-increment</td>
+			<td>Increments $x by one, then returns $x</td>
+		</tr>
+		<tr>
+			<td>$x++</td>
+			<td>Post-increment</td>
+			<td>Returns $x, then increments $x by one</td>
+		</tr>
+		<tr>
+			<td>--$x</td>
+			<td>Pre-decrement</td>
+			<td>Decrements $x by one, then returns $x</td>
+		</tr>
+		<tr>
+			<td>$x--</td>
+			<td>Post-decrement</td>
+			<td>Returns $x, then decrements $x by one</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Example:</h3>
+
+<p>The following example&nbsp;shows the different results of using the different increment/decrement operators:</p>
+
+<pre>
+<code>&lt;?php
+&nbsp; &nbsp; $x = 5;
+&nbsp; &nbsp; //Increment $x by 1, Returns $x which will 6
+&nbsp; &nbsp; echo ++$x.&#39; Pre-Increment&lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; $y = 5;
+&nbsp; &nbsp; //Returns $x which is 5, then increments $x by one
+&nbsp; &nbsp; echo $y++. &#39; Post-Increment&lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; $x = 7;
+&nbsp; &nbsp; //Decrements $x by one, then Returns $x which will 6
+&nbsp; &nbsp; echo --$x.&#39; Pre-Decrement&lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; $y = 7;
+&nbsp; &nbsp; //Returns $x which is 7, then decrements $x by one
+&nbsp; &nbsp; echo $y--.&#39; Post-Decrement&#39;;
+?&gt;</code></pre>
+
+<h3>Output:</h3>
+
+<div class="window-output">
+<div class="title-bar">
+<div class="title">Tutorialik.com</div>
+</div>
+
+<div class="body">6 Pre-Increment<br />
+5 Post-Increment<br />
+6 Pre-Decrement<br />
+7 Post-Decrement</div>
+</div>
+
+<hr />
+<h2><a id="comparison-operator" name="comparison-operator">PHP Comparison Operators</a></h2>
+
+<p>The PHP comparison operators are used to compare two values (number or string):</p>
+
+<table class="table table-responsive table-bordered table-hover">
+	<tbody>
+		<tr>
+			<th>Operator</th>
+			<th>Name</th>
+			<th style="width:55pt">Example</th>
+			<th>Result</th>
+		</tr>
+		<tr>
+			<td>==</td>
+			<td>Equal</td>
+			<td>$x == $y</td>
+			<td>True if $x is equal to $y</td>
+		</tr>
+		<tr>
+			<td>===</td>
+			<td>Identical</td>
+			<td>$x === $y</td>
+			<td>True if $x is equal to $y, and they are of the same type</td>
+		</tr>
+		<tr>
+			<td>!=</td>
+			<td>Not equal</td>
+			<td>$x != $y</td>
+			<td>True if $x is not equal to $y</td>
+		</tr>
+		<tr>
+			<td>&lt;&gt;</td>
+			<td>Not equal</td>
+			<td>$x &lt;&gt; $y</td>
+			<td>True if $x is not equal to $y</td>
+		</tr>
+		<tr>
+			<td>!==</td>
+			<td>Not identical</td>
+			<td>$x !== $y</td>
+			<td>True if $x is not equal to $y, or they are not of the same type</td>
+		</tr>
+		<tr>
+			<td>&gt;</td>
+			<td>Greater than</td>
+			<td>$x &gt; $y</td>
+			<td>True if $x is greater than $y</td>
+		</tr>
+		<tr>
+			<td>&lt;</td>
+			<td>Less than</td>
+			<td>$x &lt; $y</td>
+			<td>True if $x is less than $y</td>
+		</tr>
+		<tr>
+			<td>&gt;=</td>
+			<td>Greater than or equal to</td>
+			<td>$x &gt;= $y</td>
+			<td>True if $x is greater than or equal to $y</td>
+		</tr>
+		<tr>
+			<td>&lt;=</td>
+			<td>Less than or equal to</td>
+			<td>$x &lt;= $y</td>
+			<td>True if $x is less than or equal to $y</td>
+		</tr>
+	</tbody>
+</table>
+
+<h3>Example:</h3>
+
+<p>The following example shows the different results of using some of the comparison operators:</p>
+
+<pre>
+<code>&lt;?php
+&nbsp; &nbsp; $x = 50;
+&nbsp; &nbsp; $y = &quot;50&quot;;
+&nbsp; &nbsp; echo &#39;$x is &#39;;
+&nbsp; &nbsp; echo var_dump($x).&#39;&lt;br /&gt;&#39;;
+&nbsp; &nbsp; echo &#39;$y is &#39;;
+&nbsp; &nbsp; echo var_dump($y).&#39;&lt;br /&gt;&lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; var_dump($x == $y);
+&nbsp; &nbsp; echo &#39; $x == $y &lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; var_dump($x === $y);
+&nbsp; &nbsp; echo &#39; $x === $y&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; var_dump($x != $y);
+&nbsp; &nbsp; echo &#39; $x != $y&lt;br /&gt;&#39;;
+&nbsp; &nbsp; var_dump($x !== $y);
+&nbsp; &nbsp; echo &#39; $x !== $y&lt;br /&gt;&#39;;
+&nbsp; &nbsp; echo &#39;&lt;br /&gt;&#39;;
+
+&nbsp; &nbsp; $a = 50;
+&nbsp; &nbsp; $b = 70;
+&nbsp; &nbsp; echo &#39;$a is &#39;;
+&nbsp; &nbsp; echo var_dump($a).&#39;&lt;br /&gt;&#39;;
+&nbsp; &nbsp; echo &#39;$b is &#39;;
+&nbsp; &nbsp; echo var_dump($b).&#39;&lt;br /&gt;&lt;br /&gt;&#39;;
+&nbsp; &nbsp;&nbsp;
+&nbsp; &nbsp; var_dump($a &gt; $b);
+&nbsp; &nbsp; echo &#39; $a &gt; $b &lt;br /&gt;&#39;;
+&nbsp; &nbsp; var_dump($a &lt; $b);
+&nbsp; &nbsp; echo &#39; $a &lt; $b &lt;br /&gt;&#39;;
+?&gt;</code></pre>
+
+<h3>Output:</h3>
+
+<div class="window-output">
+<div class="title-bar">
+<div class="title">Tutorialik.com</div>
+</div>
+
+<div class="body">$x is int(50)&nbsp;<br />
+$y is string(2) &quot;50&quot;&nbsp;<br />
+<br />
+bool(true) $x == $y&nbsp;<br />
+bool(false) $x === $y<br />
+bool(false) $x != $y<br />
+bool(true) $x !== $y<br />
+<br />
+$a is int(50)&nbsp;<br />
+$b is int(70)&nbsp;<br />
+<br />
+bool(false) $a &gt; $b&nbsp;<br />
+bool(true) $a &lt; $b&nbsp;</div>
+</div>
+                <hr />
+                <ul class="pager"><li class="previous"><a href="http://www.tutorialink.com/php/changing-types.php"><i class="fa fa-arrow-circle-left"></i> Prev</a></li><li class="next"><a href="http://www.tutorialink.com/php/operator-precedence.php">Next <i class="fa fa-arrow-circle-right"></i></a></li>                </ul>
+
+                <hr />
+                                <div class="row">
+                                    <div class="col-md-6"></div>                    <div class="col-md-6">
+                        <div class="pull-right">
+                            <h4>Share This Page on:</h4>
+                            <ul class="social-link-share list-unstyled">
+                                <li class="wow flipInY" data-wow-duration="2s" data-wow-delay="1.0s"><a class="twitter-share-button" href="javascript:void(0);" onclick="share('twitter', 'PHP Operators');"><i class="fa fa-twitter"></i></a></li>
+                                <li class="wow flipInY" data-wow-duration="2s" data-wow-delay=".5s"><a href="javascript:void(0);" onclick="share('plus', '');"><i class="fa fa-google-plus"></i></a></li>
+                                <li class="wow flipInY" data-wow-duration="2s" data-wow-delay=".3"><a href="javascript:void(0);" onclick="share('fb', '');"><i class="fa fa-facebook"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!--/row-->
+                </div><!--/col-lg-10-->
+            </div><!--/row-->
+            
+			<!-- Comments -->
+        <div class="row">
+			<div class="col-lg-2 col-sm-2"></div>
+                <div class="col-lg-10 col-sm-10">
+
+                <div class="post-comment" id="post-comment">
+                <hr>
+                  <h3 class="skills">Ask Question</h3>
+                  <form class="form-horizontal" role="form" method="POST" action="http://www.tutorialink.com/subject-container-comments-p.php">
+                    <div class="form-group">                    <div class="col-lg-4">
+                        <input type="text" placeholder="Name" class="col-lg-12 form-control" name="comment_author_name" />
+                      </div>
+                      <div class="col-lg-5">
+                        <input type="text" placeholder="Email" class="col-lg-12 form-control" name="comment_author_email" />
+                      </div>
+                      <div class="col-lg-3">
+                        <div class="input-group">
+                            <span class="input-group-addon">4 + 3 = </span>
+                            <input type="text" placeholder="?" class="col-lg-12 form-control" name="checksum" />
+                        </div>
+                      </div>
+                                  </div>
+
+                    <div class="form-group">
+                      <div class="col-lg-12">
+                        <textarea placeholder="Write Your Question!" rows="8" class=" form-control" name="comment_content"></textarea>
+                      </div>
+                    </div>
+                    <input type="hidden" name="comment_parent" value="0" />
+                    <input type="hidden" name="comment_post_id" value="226" />
+                    <button type="submit" class="btn btn-info pull-right" name="submit" value="1">Post Comment</button>
+                  </form>
+                </div><!--/post-comment-->
+              </div>
+            </div><!-- Comments -->
+        </div><!--/tutorial-item-->
+        </div><!--/col-lg-9-->    
+
+        <div class="col-lg-3">
+          <div class="tutorial-side-item">
+<!--
+		  <div class="search-row">
+              <input type="text" class="form-control" placeholder="Search here">
+            </div>
+-->
+			<div class="chapter">
+			  <h3>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+				Introduction of PHP</a>
+              </h3>
+			  <div id="collapse1" class="panel-collapse collapse out">
+					<ul class="list-unstyled">
+											<li>
+								<a href="http://www.tutorialink.com/php/introduction-to-php.php"><i class="fa fa-angle-right pr-10"></i>Introduction to PHP</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/a-brief-history-of-php.php"><i class="fa fa-angle-right pr-10"></i>History of PHP</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/how-php-works.php"><i class="fa fa-angle-right pr-10"></i>How PHP works?</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/creating-and-saving-a-php-file.php"><i class="fa fa-angle-right pr-10"></i>Creating & saving a PHP file</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/output-statement.php"><i class="fa fa-angle-right pr-10"></i>Output statement</a>
+							</li>
+					</ul>
+				</div>
+            </div>
+			<div class="chapter">
+			  <h3>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+				Basics of PHP</a>
+              </h3>
+			  <div id="collapse2" class="panel-collapse collapse out">
+					<ul class="list-unstyled">
+											<li>
+								<a href="http://www.tutorialink.com/php/php-variable-types.php"><i class="fa fa-angle-right pr-10"></i>PHP Variable & Types</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/php-data-types.php"><i class="fa fa-angle-right pr-10"></i>PHP Data Types</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/changing-types.php"><i class="fa fa-angle-right pr-10"></i>Changing & Casting Types</a>
+							</li>
+                                <script>document.getElementById('collapse2').setAttribute("class", "panel-collapse collapse in");</script>
+                                <li class="active">
+                                    <a href="http://www.tutorialink.com/php/php-operators.php"><i class="fa fa-angle-double-right pr-10"></i>PHP Operators</a>
+                                </li>
+							<li>
+								<a href="http://www.tutorialink.com/php/operator-precedence.php"><i class="fa fa-angle-right pr-10"></i>Operator Precedence</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/constants.php"><i class="fa fa-angle-right pr-10"></i>Constants</a>
+							</li>
+					</ul>
+				</div>
+            </div>
+			<div class="chapter">
+			  <h3>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+				Control statements</a>
+              </h3>
+			  <div id="collapse3" class="panel-collapse collapse out">
+					<ul class="list-unstyled">
+											<li>
+								<a href="http://www.tutorialink.com/php/if-statement.php"><i class="fa fa-angle-right pr-10"></i>The if statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/if-else-statement.php"><i class="fa fa-angle-right pr-10"></i>The if else statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/else-if-clause.php"><i class="fa fa-angle-right pr-10"></i>The else if clause</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/switch-statement.php"><i class="fa fa-angle-right pr-10"></i>The switch statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/the-ternary-operator.php"><i class="fa fa-angle-right pr-10"></i>The ? operator</a>
+							</li>
+					</ul>
+				</div>
+            </div>
+			<div class="chapter">
+			  <h3>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+				Loops</a>
+              </h3>
+			  <div id="collapse4" class="panel-collapse collapse out">
+					<ul class="list-unstyled">
+											<li>
+								<a href="http://www.tutorialink.com/php/the-while-statement.php"><i class="fa fa-angle-right pr-10"></i>The while statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/do-while-statement.php"><i class="fa fa-angle-right pr-10"></i>do while statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/for-statement.php"><i class="fa fa-angle-right pr-10"></i>for statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/foreach-statement.php"><i class="fa fa-angle-right pr-10"></i>foreach statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/break-statement.php"><i class="fa fa-angle-right pr-10"></i>break statement</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/continue.php"><i class="fa fa-angle-right pr-10"></i>continue</a>
+							</li>
+							<li>
+								<a href="http://www.tutorialink.com/php/nesting-loops.php"><i class="fa fa-angle-right pr-10"></i>nesting loops</a>
+							</li>
+					</ul>
+				</div>
+            </div>
+<!--
+            <div class="tutorial-post">
+              <h3>Like This Tutorial?</h3>
+              <div class="media">
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <div class="fb-like" data-width="100" data-show-faces="true"></div>
+                  </h5>
+                </div>
+              </div>
+            </div>
+			
+            <div class="tutorial-post">
+              <h3>
+                Latest tutorial Post
+              </h3>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="img/tutorial/tutorial-thumb-1.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                    Donec id elit non mi porta gravida at eget metus amet int
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="img/tutorial/tutorial-thumb-2.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                    Donec id elit non mi porta gravida at eget metus amet int
+                  </p>
+                </div>
+              </div>
+              <div class="media">
+                <a class="pull-left gs" href="javascript:;">
+                  <img class=" " src="img/tutorial/tutorial-thumb-3.jpg" alt="">
+                </a>
+                <div class="media-body">
+                  <h5 class="media-heading">
+                    <a href="javascript:;">
+                      02 May 2014
+                    </a>
+                  </h5>
+                  <p>
+                    Donec id elit non mi porta gravida at eget metus amet int
+                  </p>
+                </div>
+              </div>
+            </div>
+			-->
+          </div>
+        </div>
+        <!--tutorial end-->
+      </div>
+    </div><!--container end-->
+<!--footer start-->
+	<footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-sm-3 address wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+            <h1>contact info</h1>
+            <address>
+              <p><i class="fa fa-envelope pr-10"></i>Email :   <a href="mailto:contact@tutorialink.com">contact@tutorialink.com</a></p>
+              <p><i class="fa fa-globe pr-10"></i>Web : <a href="http://tutorialink.com">tutorialink.com</a></p>
+            </address>
+          </div>
+          <div class="col-lg-3 col-sm-3 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
+            <h1>Twitter</h1>
+              <div class="tweet-box">
+                <i class="fa fa-twitter"></i>
+                <em>Please follow us
+                   <a class="twitter-follow-button" href="http://twitter.com/tutorialink_com">Follow @Tutorialink</a>
+                  for all future updates!
+                  <a href="http://twitter.com/tutorialink_com">twitter.com/tutorialink.com</a>
+                </em>
+              </div>
+
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="page-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
+              <h1>Tutorialink</h1>
+              <ul class="page-footer-list">
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="http://www.tutorialink.com/contact.html">Contact Us</a>
+                </li>
+                <!--<li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="http://www.tutorialink.com/about.html">About Us</a>
+                </li>-->
+                <li>
+                  <i class="fa fa-angle-right"></i>
+                  <a href="http://www.tutorialink.com/terms-conditions.html">Terms &amp; Conditions</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-3">
+            <div class="text-footer wow fadeInUp" data-wow-duration="2s" data-wow-delay=".7s">
+              <h1>Up Coming</h1>
+              <p>
+                GTU Corner will Added Soon..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+	</footer>
+
+	<!--small footer start -->
+    <footer class="footer-small">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                  <div class="copyright">
+                    <p>&copy; Tutorialink.com - 2016</p>
+                  </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 pull-right">
+                    <ul class="social-link-footer list-unstyled">
+                        <!--<li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".1s"><a href="http://www.facebook.com/"><i class="fa fa-linkedin"></i></a></li>-->
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".3s"><a href="http://twitter.com/tutorialink_com"><i class="fa fa-twitter"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".6s"><a href="http://plus.google.com/103336253974263959281"><i class="fa fa-google-plus"></i></a></li>
+                        <li class="wow flipInX" data-wow-duration="2s" data-wow-delay=".8s"><a href="http://www.facebook.com/tutorialink.j"><i class="fa fa-facebook"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+	    <!--small footer end--><!--footer end-->
+
+<!-- js placed at the end of the document so the pages load faster-->
+<!--jquery start-->
+<script src="http://www.tutorialink.com/jscript/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){
+            event.preventDefault();
+            $('html,body').animate({scrollTop:$(this.hash).offset().top},2000);
+        });
+    });
+</script>
+
+<!--common script for all pages-->
+<script>
+$(document).bind('contextmenu',function(e){
+    e.preventDefault();
+});
+document.onkeydown = function (e) {
+    //document.getElementById("test").innerHTML = e.keyCode
+    //alert(e.keyCode);
+    if((e.which || e.keyCode) === 123) {
+        return false;
+    }
+    if((e.which || e.keyCode) === 73) {
+        if(e.ctrlKey == 1) {
+            return false;
+        }
+    }
+    if((e.which || e.keyCode) === 85) {
+        if(e.ctrlKey == 1) {
+            return false;
+        }
+    }
+};
+</script>
+
+<script src="http://www.tutorialink.com/jscript/bootstrap.min.js"></script>
+<script src="http://www.tutorialink.com/jscript/hover-dropdown.js" type="text/javascript" ></script>
+
+<script src="http://www.tutorialink.com/jscript/highlight.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="http://www.tutorialink.com/jscript/jquery.flexslider.js"  type="text/javascript"></script>
+<script type="text/javascript">
+$('a.info').tooltip();
+$(window).load(function () {
+    $('.flexslider').flexslider({
+        animation: "slide",
+        start: function (slider) {
+            $('body').removeClass('loading');
+        }
+    });
+});
+</script>
+<script defer src="http://www.tutorialink.com/assets/bxslider/jquery.bxslider.js"  type="text/javascript"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function () {
+        $('.bxslider1').bxSlider({
+            minSlides: 5,
+            maxSlides: 6,
+            slideWidth: 360,
+            slideMargin: 2,
+            moveSlides: 1,
+            responsive: true,
+            nextSelector: '#slider-next',
+            prevSelector: '#slider-prev',
+            nextText: 'Onward →',
+            prevText: '← Go back'
+        });
+    });
+</script>
+
+
+<script src="http://www.tutorialink.com/jscript/jquery.easing.min.js"></script>
+<script src="http://www.tutorialink.com/jscript/link-hover.js"></script>
+<script src="http://www.tutorialink.com/jscript/wow.min.js"></script>
+<script>
+var Script = function () {
+//    tool tips
+    $('.tooltips').tooltip();
+
+//    popovers
+    $('.popovers').popover();
+
+}();
+(function() {
+    $('<i id="back-to-top"></i>').appendTo($('body'));
+    $(window).scroll(function() {
+        if($(this).scrollTop() != 0) {
+            $('#back-to-top').fadeIn(1000);
+        } else {
+            $('#back-to-top').fadeOut(1000);
+        }
+    });
+    $('#back-to-top').click(function() {
+        $('body,html').animate({scrollTop:0},600);
+    });
+})();
+</script>
+<!--scrolling js-->
+<script src="http://www.tutorialink.com/jscript/jquery.nicescroll.js"></script>
+<script>
+(function() {
+    "use strict";
+    // custom scrollbar
+    $("html").niceScroll({styler: "fb", cursorcolor: "#48cfad", cursorwidth: '6', cursorborderradius: '10px', background: '#FFFFFF', spacebarenabled: true, cursorborder: '0',  zindex: '1000'});
+
+    $(".scrollbar1").niceScroll({styler: "fb", cursorcolor: "#48cfad", cursorwidth: '2', cursorborderradius: '10px',autohidemode: false, background: '#f4f4f4', spacebarenabled: false, cursorborder: '0'});
+
+    $(".scrollbar1").getNiceScroll();
+    if ($('body').hasClass('scrollbar1-collapsed')) {
+        $(".scrollbar1").getNiceScroll().hide();
+    }
+
+})(jQuery);
+</script>
+<!--//scrolling js--><script src="http://www.tutorialink.com/jscript/social.js"></script>
+<!--jquery end-->
+
+<script>
+		wow = new WOW(
+			{
+				boxClass:     'wow',      // default
+				animateClass: 'animated', // default
+				offset:       0          // default
+			}
+		)
+			wow.init();
+</script>
+</body>
+</html>

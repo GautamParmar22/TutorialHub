@@ -1,0 +1,29 @@
+ <td><span class="style2">Login ID </span></td>
+          <td><input name="loginid" type="text" id="loginid2"></td>
+        </tr>
+        <tr>
+          <td><span class="style2">Password</span></td>
+          <td><input name="pass" type="password" id="pass2"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><span class="errors">
+            <?php
+		  if(isset($found))
+		  {
+		  	echo "Invalid Username or Password";
+		  }
+		  ?>
+          </span></td>
+          </tr>
+        <tr>
+          <td colspan=2 align=center class="errors">
+		  <input name="submit" type="submit" id="submit" value="Login">		  </td>
+        </tr>
+        <tr>
+          <td colspan="2" bgcolor="#CC3300"><div align="center"><span class="style4">New User ? <a href="signup.php">Signup Free</a></span></div></td>
+          </tr>
+      </table>
+      <div align="center">
+       
+    </form></table></td>
+  </tr>

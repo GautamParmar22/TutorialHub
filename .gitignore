@@ -1,0 +1,23 @@
+/nbproject/private/
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore environment settings (if any, like .env)
+.env
+
+# Ignore logs and temporary files
+*.log
+*.bak
+
+# Ignore compiled or cached files (if applicable)
+*.cache
+/cache/
+
+# Ignore vendor directory (if you use Composer)
+vendor/
+
+# Ignore any IDE-specific files
+.idea/
+.vscode/
+
